@@ -69,9 +69,29 @@ print(employee_details.keys())
 print(employee_details.values())
 print(employee_details.items())
 
-
 for value in employee_details.values():
     print(value)
 
 for key,value in employee_details.items():
     print(f"{key} : {value} ")
+
+
+details={"employee1":{"name":"Ashutosh Jain","Age":27,"Experience":5,"role":"RPA Engineer"},"employee2":{"name":"Vijay Jain","Age":46,"Experience":25,"role":"Data Engineer"},"employee3":{"name":"Vanita Jain","Age":34,"Experience":23,"role":"Data Engineer"}}
+
+print(details["employee1"]["Age"])
+print("Length of dictionry is ",len(details))
+
+for employee_id,employee_detail in details.items():
+    print(f"{employee_id} -> {employee_detail["name"]}")
+
+for emp_id,emp_detail in details.items():
+    if(emp_detail["role"] == "Data Engineer"):
+        print(emp_detail["name"])
+
+for emp_id,emp_detail in details.items():
+    if(emp_detail["Experience"] == 5):
+        print(f"Employee name whose experience is 5 {emp_detail['name']}")
+
+for emp_id,emp_detail in details.items():
+    if(emp_detail["Experience"]== 5 and emp_detail["role"]=="RPA Engineer"):
+        print(emp_detail["name"])

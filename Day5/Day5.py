@@ -43,3 +43,32 @@ for i in range(3):
     quentity=int(input("Enter the quentity : "))
     # result = calculate(price,quentity)
     print(f"{i} : result for {price} and {quentity} is {result}")
+
+
+def printDetails(name,age,experience):
+    print(f"name is {name}")
+    print(f"Age is {age}")
+    print(f"experience is {experience}")
+
+
+printDetails(name="Ashutosh",age=23,experience=4)
+
+# Args
+
+def function23(*num):
+    total=0
+    for i in num:
+        total = total +i
+    return total
+
+result = function23(10,34,34,3,43,3)
+
+print(result)
+
+def details(**detail):
+    for key,value in detail.items():
+        print(f"{key} : {value}")
+
+
+details(name="Ashutosh Jain",Age=32,Experience=5,Role="Senior Software Enineer")
+details(name="Rahul",Age=32)

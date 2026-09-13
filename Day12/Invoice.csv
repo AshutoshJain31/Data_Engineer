@@ -1,0 +1,4 @@
+﻿Invoice number,company_code,Amount,Status
+,IN01,15000,New
+INV102,XX09,5000,New
+INV103,IN02,25000,New

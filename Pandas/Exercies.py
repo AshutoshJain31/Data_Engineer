@@ -39,4 +39,25 @@ print(f"max salary {max(employee_data['Salary'])}")
 print(f"max salary {min(employee_data['Salary'])}")
 print(f"max salary {employee_data['Salary'].mean(numeric_only=True)}")
 
-print(employee_data[employee_data['Salary']>60000])
+# print(employee_data[employee_data["Salary"] > 60000])
+
+# print(employee_data[employee_data["Experience"] >= 5])
+
+# print(
+#     employee_data[(employee_data["Experience"] >= 5) & (employee_data["Salary"] >= 60000)]
+# )
+
+# print(employee_data[employee_data["Department"] == "Data"])
+
+# print(
+#     employee_data[(employee_data["Experience"] >= 5) | (employee_data["Salary"] >= 60000)]
+# )
+
+print(sorted(employee_data["Salary"]))
+
+print(employee_data.sort_values("Salary",ascending=True))
+
+print(employee_data.sort_values("Salary",ascending=False))
+
+
+print(employee_data)

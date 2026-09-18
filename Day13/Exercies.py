@@ -23,22 +23,22 @@ employee_data = pd.DataFrame(
 # print(f"Last 3 rows : {employee_data.tail (2)}")
 
 
-print(employee_data.shape)
+# print(employee_data.shape)
 
-print(employee_data.columns)
+# print(employee_data.columns)
 
-print(employee_data.info())
+# print(employee_data.info())
 
 # print(employee_data.describe())
 
-print(employee_data["Salary"])
+# print(employee_data["Salary"])
 
-print(employee_data.iloc[0, :])
+# print(employee_data.iloc[0, :])
 
-print(f"max salary {max(employee_data['Salary'])}")
-print(f"max salary {min(employee_data['Salary'])}")
-print(f"max salary {employee_data['Salary'].mean(numeric_only=True)}")
+# print(f"max salary {max(employee_data['Salary'])}")
+# print(f"max salary {min(employee_data['Salary'])}")
+# print(f"max salary {employee_data['Salary'].mean(numeric_only=True)}")
 
-print(employee_data[employee_data['Salary']>60000])
+# print(employee_data[employee_data['Salary']>60000])
 
-
+print(employee_data["Experience"])
